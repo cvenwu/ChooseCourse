@@ -122,7 +122,7 @@ public partial class Teacher_Course_Add : System.Web.UI.Page
             if(cmd.ExecuteNonQuery() > 0)
             {
                 Response.Write("<script>插入成功！</script>");
-                Response.Redirect("Course_Add.aspx");
+                Response.Redirect("Course_Add.aspx");  
             }
             else{
                 Response.Write("<script>插入失败！</script>");
@@ -132,7 +132,7 @@ public partial class Teacher_Course_Add : System.Web.UI.Page
         catch (SqlException exception)
         {
             Response.Write(exception.Message);
-        }
+        } 
         finally
         {
             if (conn.State == ConnectionState.Open)

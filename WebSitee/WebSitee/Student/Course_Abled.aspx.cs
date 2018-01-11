@@ -61,7 +61,7 @@ public partial class Student_Course_Abled : System.Web.UI.Page
         {
             //将会打印不同的参数，根据不同的参数来获取值！
             // Response.Write(e.CommandArgument.GetType());        //将会打印一个String
-            Response.Write("<script>alert(" + e.CommandArgument + ")</script>");
+            //Response.Write("<script>alert(" + e.CommandArgument + ")</script>");
             //  int RowIndex = Convert.ToInt32(e.CommandArgument);
             //   DataKey keys = Course1.DataKeys[RowIndex];      //行中的数据;
             //   string perid = keys.Value.ToString();
@@ -111,7 +111,7 @@ public partial class Student_Course_Abled : System.Web.UI.Page
             cmd.Parameters.Add(para3);
 
 
-            Response.Write("s");
+            //Response.Write("s");
 
             SqlDataReader dr;
             try
@@ -148,7 +148,7 @@ public partial class Student_Course_Abled : System.Web.UI.Page
                     cmd2.Parameters.Add(para13);
                     cmd2.Parameters.Add(para14);
 
-                    Response.Write("s");
+                    //Response.Write("s");
                     conn2.Open();
 
                     /*在选修课程同时，还要修改课程容量*/
@@ -205,22 +205,6 @@ public partial class Student_Course_Abled : System.Web.UI.Page
                     conn.Close();
 
             }
-
-
-
-
-
-
-
-
-
-            
-
-            
-
-
-
-
 
             try
             {
